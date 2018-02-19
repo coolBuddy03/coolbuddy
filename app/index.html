@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html ng-app="RentalManagementApp">
+
+<head lang="en" ng-cloak>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:url" content="" />
+    <meta property="article:publisher" content="" />
+    <meta property="article:author" content="" />
+    <meta name="author" content="">
+    <title ng-bind="pageTitle.getTitle()"></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.5/angular-material.min.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <base href="/">
+</head>
+
+<body style="position: relative;width:100%">
+    <div layout="column" ng-view id="ngView" style="position: absolute;min-height: 100vh;width:100%" autoscroll="true"></div>
+    <!-- Third Party includes -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular-aria.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular-animate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular-route.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.5/angular-material.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular-sanitize.min.js"></script>
+    <!-- Angular main and shared -->
+    <script src="app.module/app.module.js"></script>
+    <script src="app.route/app.route.js"></script>
+    <!-- Component wise includes -->
+    <script src="components/shared/sharedScript.js"></script>
+    <script src="components/home/homeScript.js"></script>
+    <script src="components/category/categoryScript.js"></script>
+    <script src="components/header/headerScript.js"></script>
+</body>
+
+</html>

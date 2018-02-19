@@ -1,0 +1,71 @@
+/* Header Css Starts */
+
+.rental-management-header md-toolbar {
+    background-color: #f68e09 !important;
+}
+
+.border-bottom-1px{
+	border-bottom:1px solid #f1f1f1;
+}
+.padding-all-0{
+	padding: 0px !important;
+}
+.margin-all-0{
+	margin:0px !important;
+}
+.text-align-left{
+	text-align: left !important;
+}
+/* Header Css Ends */
+
+/* Category List Css Starts */
+.margin-top-20{
+	margin-top: 20px ;
+}
+.margin-top-30{
+	margin-top: 30px;
+}
+.text-decoration-none{
+	text-decoration: none;
+}
+/* Category List Css Ends */
+/* BreadCrumbs Css Starts */
+.padding-left-5{
+	padding-left: 5px;
+}
+.padding-left-10{
+	padding-left:10px
+}
+.margin-bottom-20{
+	margin-bottom: 20px;
+}
+.text-blue{
+	color: blue;
+}
+.cursor-pointer{
+	cursor: pointer;
+}
+/* BreadCrumbs Css Ends */
+/* Home Screen Css Starts */
+.text-center{
+	text-align: center;
+}
+.margin-top-50{
+	margin-top: 50px;
+}
+.margin-bottom-0{
+	margin-bottom: 0px;
+}
+.margin-top-5{
+	margin-top:5px;
+}
+.font-size-17{
+	font-size: 17px;
+}
+.font-size-21{
+	font-size: 21px;
+}
+.font-weight-600{
+	font-weight:600;
+}
+/*Home Screen Css Ends*/

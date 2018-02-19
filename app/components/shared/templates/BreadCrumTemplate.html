@@ -1,0 +1,19 @@
+<div>
+    <div class="margin-bottom-20" style="display:flex;">
+    	<div>
+    		<a ng-href="/" class="text-blue text-decoration-none cursor-pointer">Home</a> 
+    	</div>
+    	<div class="padding-left-5">
+    		<!-- Location Name / -->
+    		<a ng-click="locationClicked()" class="text-blue text-decoration-none cursor-pointer">/ {{location}} </a>
+    	</div>
+    	<div class="padding-left-5" ng-if="branch">
+    		<!-- / Branch Name  -->
+    		<a ng-click="branchClicked()" class="text-blue text-decoration-none cursor-pointer">/ {{branch}}</a>
+    	</div>
+    	<div class="padding-left-5" ng-if="category">
+    		<!-- / Category Name -->
+    		/ {{category}}
+    	</div>
+    </div>
+</div>

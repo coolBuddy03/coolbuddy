@@ -1,0 +1,66 @@
+<div class="rental-management-header">
+    <md-toolbar class="md-warn">
+        <div layout="row">
+            <div flex="80" flex-offset="10">
+                <div class="md-toolbar-tools">
+                    <h2 class="md-flex">Rental Management System</h2>
+                    <span flex></span>
+                    <!-- <md-menu md-offset="0 -7" layout-align="end center">
+                        <md-button aria-label="Open menu" class="md-button" ng-click="$mdMenu.open($event)">
+                            Select Location
+                        </md-button>
+                        <md-menu-content width="3">
+                            <md-menu-item>
+                                <md-button ng-click=""> <span md-menu-align-target>Logout</span></md-button>
+                            </md-menu-item>
+                        </md-menu-content>
+                    </md-menu> -->
+                    <!-- Original Menu -->
+                    <md-menu md-position-mode="target-right bottom">
+                        <md-button ng-click="$mdMenu.open()">
+                            Select Location
+                        </md-button>
+                        <md-menu-content>
+                            <!-- ng-Repeat List Starts -->
+                            <md-menu-item ng-repeat="locData in loc_data_list" class="border-bottom-1px">
+                                <md-menu>
+                                    <md-button ng-click="$mdMenu.open();fetchCategory($index)" class="padding-all-0 margin-all-0 text-align-left">{{locData.name}}</md-button>
+                                    <md-menu-content>
+                                        <md-menu-item ng-repeat="branchData in locData.branches">
+                                            <md-button ng-click="fetchCategory($parent.$index,$index)">{{branchData.name}}</md-button>
+                                        </md-menu-item>
+                                    </md-menu-content>
+                                </md-menu>
+                            </md-menu-item>
+                            <!-- ng-Repeat List Ends -->
+                            <!-- <md-menu-item>
+                                <md-menu>
+                                    <md-button ng-click="$mdMenu.open()">New</md-button>
+                                    <md-menu-content>
+                                        <md-menu-item>
+                                            <md-button ng-click="">Document</md-button>
+                                        </md-menu-item>
+                                        <md-menu-item>
+                                            <md-button ng-click="">Spreadsheet</md-button>
+                                        </md-menu-item>
+                                        <md-menu-item>
+                                            <md-button ng-click="">Presentation</md-button>
+                                        </md-menu-item>
+                                        <md-menu-item>
+                                            <md-button ng-click="">Form</md-button>
+                                        </md-menu-item>
+                                        <md-menu-item>
+                                            <md-button ng-click="">Drawing</md-button>
+                                        </md-menu-item>
+                                    </md-menu-content>
+                                </md-menu>
+                            </md-menu-item>
+                            <md-menu-divider></md-menu-divider> -->
+                        </md-menu-content>
+                    </md-menu>
+                    <!-- Original Menu -->
+                </div>
+            </div>
+        </div>
+    </md-toolbar>
+</div>
